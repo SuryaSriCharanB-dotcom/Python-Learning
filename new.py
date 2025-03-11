@@ -16,7 +16,7 @@ colors = [colorsys.hsv_to_rgb(i/100.0, 1, 1) for i in range(100)]
 colors = [(int(r*255), int(g*255), int(b*255)) for r, g, b in colors]
 
 # Draw spiral
-for i in range(200):
+for i in range(400):
     t.pencolor(colors[i % 100])
     t.forward(i * 2)
     t.right(59)
